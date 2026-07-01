@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Strickland's Electrical Ltd. | Licensed Electricians in Corner Brook, NL</title>
+<meta name="description" content="Strickland's Electrical Ltd. is a licensed electrical contractor serving Corner Brook, Massey Drive and Western Newfoundland. Residential and commercial wiring, panel upgrades, lighting, EV chargers and more. Free estimates. Call (709) 886-8501." />
+<meta name="theme-color" content="#14161c" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="Strickland's Electrical Ltd. | Electricians in Corner Brook, NL" />
+<meta property="og:description" content="Licensed residential and commercial electricians serving Corner Brook, Massey Drive and Western Newfoundland. Free estimates." />
+<meta property="og:locale" content="en_CA" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Strickland's Electrical Ltd.",
+  "image": "",
+  "telephone": "+1-709-886-8501",
+  "email": "",
+  "url": "",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "142 Massey Dr",
+    "addressLocality": "Massey Drive",
+    "addressRegion": "NL",
+    "postalCode": "A2H 7A1",
+    "addressCountry": "CA"
+  },
+  "areaServed": ["Corner Brook", "Massey Drive", "Western Newfoundland"],
+  "description": "Licensed electrical contractor providing residential and commercial electrical services in Corner Brook and Western Newfoundland.",
+  "sameAs": ["https://www.facebook.com/p/Stricklands-Electrical-100057333104794/"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#15171d;
+    --ink-2:#33373f;
+    --bg:#ffffff;
+    --bg-2:#f6f5f1;
+    --bg-3:#ecebe4;
+    --dark:#15171d;
+    --dark-2:#1d2027;
+    --line:#e5e3db;
+    --line-dark:rgba(255,255,255,.12);
+    --muted:#5c6371;
+    --muted-d:#a7adba;
+    --accent:#ffce00;
+    --accent-2:#ffb800;
+    --accent-ink:#15171d;
+    --maxw:1200px;
+    --r:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.65;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.cond{font-family:'Barlow Condensed','Inter',sans-serif;line-height:1.04;letter-spacing:.2px;font-weight:800}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{position:relative}
+  .kicker{display:inline-block;font-family:'Inter';font-weight:700;font-size:12.5px;letter-spacing:2.2px;text-transform:uppercase;color:var(--ink-2)}
+  .kicker.on-dark{color:var(--accent)}
+  .lead{color:var(--muted);font-size:18px}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:15.5px;
+    padding:15px 26px;border-radius:10px;cursor:pointer;border:2px solid transparent;white-space:nowrap;
+    transition:transform .15s ease,background .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease}
+  .btn svg{width:18px;height:18px}
+  .btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 8px 24px rgba(255,206,0,.32)}
+  .btn-primary:hover{background:var(--accent-2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,184,0,.42)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#000;transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+  .btn-outline:hover{background:#fff;color:var(--ink);border-color:#fff;transform:translateY(-2px)}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+
+  /* utility top bar */
+  .topbar{background:var(--dark);color:var(--muted-d);font-size:13px}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:40px;gap:20px}
+  .topbar a{color:var(--muted-d);transition:color .15s}
+  .topbar a:hover{color:#fff}
+  .topbar .tb-r{display:flex;align-items:center;gap:22px}
+  .topbar b{color:#fff;font-weight:600}
+  .topbar .sep{color:rgba(255,255,255,.25)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:60;transition:background .3s ease,box-shadow .3s ease,border-color .3s ease;
+    background:transparent;border-bottom:1px solid transparent}
+  header .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .bolt{width:42px;height:42px;border-radius:11px;background:var(--ink);border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:var(--accent);flex:none}
+  .brand .bolt svg{width:26px;height:28px}
+  .brand .bn{font-family:'Barlow Condensed';font-weight:800;font-size:23px;letter-spacing:.4px;line-height:1;color:#fff;text-transform:uppercase;transition:color .3s}
+  .brand .bn small{display:block;font-family:'Inter';font-size:10px;letter-spacing:2.4px;font-weight:600;color:var(--muted-d);margin-top:3px;transition:color .3s}
+  .nav-links{display:flex;align-items:center;gap:32px}
+  .nav-links a{font-weight:600;font-size:15px;color:rgba(255,255,255,.85);transition:color .15s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{display:flex;align-items:center;gap:16px}
+  .nav-phone{display:flex;align-items:center;gap:9px;font-weight:700;color:#fff;font-size:15px;transition:color .3s}
+  .nav-phone svg{width:18px;height:18px;color:var(--accent)}
+  .menu-btn{display:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:9px;color:#fff;padding:9px 11px;cursor:pointer}
+  /* scrolled / solid header */
+  header.solid{background:#fff;border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(20,22,28,.07)}
+  header.solid .brand .bn{color:var(--ink)}
+  header.solid .nav-links a{color:var(--ink-2)}
+  header.solid .nav-links a:hover{color:var(--ink)}
+  header.solid .nav-phone{color:var(--ink)}
+  header.solid .menu-btn{background:var(--bg-2);border-color:var(--line);color:var(--ink)}
+
+  /* hero */
+  .hero{position:relative;min-height:max(620px,84vh);display:flex;align-items:center;color:#fff;margin-top:-118px;padding-top:118px}
+  .hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:60% center}
+  .hero-media::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(12,13,17,.92) 0%,rgba(12,13,17,.74) 42%,rgba(12,13,17,.28) 78%,rgba(12,13,17,.1) 100%)}
+  .hero .wrap{position:relative;padding-top:54px;padding-bottom:70px}
+  .hero-inner{max-width:660px}
+  .hero .kicker{margin-bottom:20px}
+  .hero h1{font-size:clamp(40px,6.4vw,78px);text-transform:none;letter-spacing:.4px}
+  .hero h1 .hl{color:var(--accent)}
+  .hero p.sub{font-size:clamp(17px,2vw,20px);color:rgba(255,255,255,.86);margin:22px 0 34px;max-width:560px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-trust{display:flex;gap:14px 28px;margin-top:38px;flex-wrap:wrap}
+  .hero-trust span{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.9)}
+  .hero-trust svg{width:19px;height:19px;color:var(--accent);flex:none}
+
+  /* stat strip */
+  .strip{background:var(--dark);border-top:1px solid var(--line-dark)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .strip .it{display:flex;align-items:center;gap:14px;padding:26px 18px;border-left:1px solid var(--line-dark)}
+  .strip .it:first-child{border-left:none;padding-left:0}
+  .strip .ic{width:46px;height:46px;border-radius:11px;background:rgba(255,206,0,.14);color:var(--accent);display:grid;place-items:center;flex:none}
+  .strip .ic svg{width:23px;height:23px}
+  .strip b{display:block;font-family:'Barlow Condensed';font-size:19px;text-transform:uppercase;letter-spacing:.3px;color:#fff;line-height:1.1}
+  .strip span{color:var(--muted-d);font-size:12.5px}
+
+  /* section shell */
+  .sec{padding:96px 0}
+  .sec.alt{background:var(--bg-2)}
+  .sec-head{max-width:680px;margin-bottom:48px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(32px,4.6vw,52px);text-transform:none;margin-top:14px;color:var(--ink)}
+  .sec-head p{color:var(--muted);font-size:17.5px;margin-top:16px}
+
+  /* services: feature photo cards */
+  .svc-feature{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  .svc-card:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(20,22,28,.14);border-color:var(--bg-3)}
+  .svc-thumb{position:relative;aspect-ratio:16/11;overflow:hidden}
+  .svc-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .svc-card:hover .svc-thumb img{transform:scale(1.07)}
+  .svc-thumb .tag{position:absolute;left:14px;top:14px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:12px;letter-spacing:.4px;padding:6px 12px;border-radius:7px;text-transform:uppercase}
+  .svc-body{padding:24px 24px 28px}
+  .svc-body h3{font-size:24px;text-transform:uppercase;color:var(--ink)}
+  .svc-body p{color:var(--muted);font-size:15px;margin-top:9px}
+  /* services: more we handle (numbered spec grid) */
+  .svc-more-head{margin-top:60px;margin-bottom:6px;display:flex;align-items:baseline;gap:14px}
+  .svc-more-head h3{font-family:'Barlow Condensed';font-size:24px;text-transform:uppercase;color:var(--ink)}
+  .svc-more-head span{color:var(--muted);font-size:14.5px}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 46px;border-bottom:1px solid var(--line)}
+  .svc-item{position:relative;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;padding:24px 10px 24px 20px;border-top:1px solid var(--line);transition:background .25s ease}
+  .svc-item:hover{background:var(--bg-2)}
+  .svc-item::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:3px;border-radius:3px;background:var(--accent);transform:scaleY(0);transition:transform .25s ease}
+  .svc-item:hover::before{transform:scaleY(1)}
+  .svc-item .n{font-family:'Barlow Condensed';font-weight:800;font-size:38px;line-height:.85;color:var(--bg-3);transition:color .25s;min-width:40px}
+  .svc-item:hover .n{color:var(--accent-2)}
+  .svc-item h3{font-size:21px;text-transform:none;color:var(--ink);display:flex;align-items:center;gap:10px;line-height:1.15}
+  .svc-item h3 svg{width:20px;height:20px;color:var(--ink-2);flex:none;transition:color .25s}
+  .svc-item:hover h3 svg{color:var(--accent-2)}
+  .svc-item p{color:var(--muted);font-size:14px;margin-top:5px;max-width:420px}
+
+  /* about split */
+  .split{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+  .about-figure{position:relative}
+  .about-figure>img{width:100%;border-radius:18px;object-fit:cover;aspect-ratio:4/4.4;box-shadow:0 30px 60px rgba(20,22,28,.18)}
+  .about-badge{position:absolute;right:-16px;bottom:-16px;background:var(--accent);color:var(--accent-ink);border-radius:14px;padding:18px 22px;box-shadow:0 18px 40px rgba(255,184,0,.4);max-width:200px}
+  .about-badge b{font-family:'Barlow Condensed';font-size:30px;display:block;line-height:1;text-transform:uppercase}
+  .about-badge span{font-size:13px;font-weight:600}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+  .stat{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .sec.alt .stat{background:#fff}
+  .stat b{font-family:'Barlow Condensed';font-size:32px;color:var(--ink);display:block;line-height:1}
+  .stat b em{color:var(--accent);font-style:normal}
+  .stat span{color:var(--muted);font-size:13.5px}
+  .checklist{list-style:none;margin-top:26px}
+  .checklist li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line)}
+  .checklist li:last-child{border-bottom:none}
+  .checklist .ck{width:26px;height:26px;border-radius:7px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:none;margin-top:2px}
+  .checklist .ck svg{width:15px;height:15px}
+  .checklist b{display:block;font-size:16px}
+  .checklist span{color:var(--muted);font-size:14px}
+
+  /* photo CTA band */
+  .band{position:relative;color:#fff;overflow:hidden}
+  .band-media{position:absolute;inset:0;z-index:-2}
+  .band-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+  .band-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,13,17,.93),rgba(12,13,17,.7) 60%,rgba(12,13,17,.45))}
+  .band .wrap{position:relative;padding:84px 24px;display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
+  .band h2{font-size:clamp(30px,4.4vw,50px);text-transform:none}
+  .band p{color:rgba(255,255,255,.82);margin-top:12px;font-size:18px;max-width:520px}
+  .band .b-actions{display:flex;flex-direction:column;gap:12px;min-width:230px}
+  .band .b-phone{font-family:'Barlow Condensed';font-size:34px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px}
+
+  /* area */
+  .area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:54px;align-items:center}
+  .area-map{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:360px;box-shadow:0 20px 44px rgba(20,22,28,.1)}
+  .area-map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .pill{background:var(--bg-2);border:1px solid var(--line);padding:9px 16px;border-radius:50px;font-size:14px;font-weight:600;color:var(--ink-2)}
+  .pill em{color:var(--accent);font-style:normal}
+
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;position:relative}
+  .sec.alt .step{background:var(--bg)}
+  .step .num{counter-increment:s;font-family:'Barlow Condensed';font-weight:800;font-size:18px;color:var(--accent-ink);background:var(--accent);width:42px;height:42px;border-radius:11px;display:grid;place-items:center;margin-bottom:18px}
+  .step .num::before{content:"0" counter(s)}
+  .step h3{font-size:22px;text-transform:uppercase;margin-bottom:8px;color:var(--ink)}
+  .step p{color:var(--muted);font-size:15px}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:50px}
+  .info-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;gap:16px;align-items:flex-start;margin-bottom:14px;transition:border-color .2s}
+  .info-card:hover{border-color:var(--ink)}
+  .info-card .iic{width:46px;height:46px;border-radius:11px;background:var(--bg-2);display:grid;place-items:center;color:var(--ink);flex:none}
+  .info-card .iic svg{width:22px;height:22px}
+  .info-card b{font-size:17px;text-transform:uppercase;font-family:'Barlow Condensed';letter-spacing:.4px}
+  .info-card a,.info-card p{color:var(--muted);font-size:15px}
+  .info-card a:hover{color:var(--ink)}
+  form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:0 20px 50px rgba(20,22,28,.07)}
+  form h3{font-size:26px;text-transform:uppercase;color:var(--ink)}
+  form .fsub{color:var(--muted);font-size:14.5px;margin:6px 0 22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:12.5px;font-weight:700;color:var(--ink-2);margin-bottom:7px;text-transform:uppercase;letter-spacing:.6px}
+  .field input,.field textarea,.field select{width:100%;background:var(--bg-2);border:1.5px solid var(--line);border-radius:10px;
+    padding:13px 15px;color:var(--ink);font-family:inherit;font-size:15px;transition:border-color .15s,box-shadow .15s,background .15s}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(255,206,0,.18)}
+  .field textarea{resize:vertical;min-height:120px}
+  form .btn{width:100%;margin-top:6px}
+  .form-note{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
+  .form-note a{color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--accent)}
+
+  /* footer */
+  footer{background:var(--dark);color:var(--muted-d);padding:64px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;margin-bottom:44px}
+  .foot-grid .brand .bn{color:#fff}
+  .foot-grid>div>p{margin-top:18px;font-size:15px;max-width:340px;color:var(--muted-d)}
+  .foot-col h4{font-family:'Barlow Condensed';text-transform:uppercase;font-size:18px;letter-spacing:.5px;color:#fff;margin-bottom:16px}
+  .foot-col a,.foot-col p{display:block;color:var(--muted-d);font-size:15px;margin-bottom:10px}
+  .foot-col a:hover{color:var(--accent)}
+  .foot-bottom{border-top:1px solid var(--line-dark);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:13px}
+  .social{display:flex;gap:11px}
+  .social a{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);display:grid;place-items:center;color:var(--muted-d);transition:.2s}
+  .social a:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .foot-credit a{color:#fff;font-weight:600;border-bottom:1.5px solid var(--accent)}
+  .foot-credit a:hover{color:var(--accent)}
+
+  /* mobile call bar */
+  .mobile-call{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(21,23,29,.97);backdrop-filter:blur(8px);border-top:1px solid var(--line-dark);padding:10px 14px;gap:10px}
+  .mobile-call .btn{flex:1;padding:13px}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* mobile drawer */
+  .drawer{position:fixed;inset:0;z-index:90;background:rgba(21,23,29,.98);backdrop-filter:blur(8px);display:none;flex-direction:column;padding:88px 30px 30px}
+  .drawer.open{display:flex}
+  .drawer a{font-family:'Barlow Condensed';font-size:30px;text-transform:uppercase;color:#fff;padding:14px 0;border-bottom:1px solid var(--line-dark)}
+  .drawer .btn{margin-top:24px}
+  .drawer .close{position:absolute;top:24px;right:24px;background:rgba(255,255,255,.1);border:1px solid var(--line-dark);border-radius:10px;color:#fff;padding:9px 12px;cursor:pointer}
+
+  /* a11y + polish */
+  *{touch-action:manipulation}
+  section[id]{scroll-margin-top:96px}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+  /* responsive */
+  @media(max-width:980px){
+    .nav-links,.nav-phone{display:none}
+    .menu-btn{display:block}
+    .topbar .tb-l{display:none}
+    .topbar .wrap{justify-content:center}
+    .strip .wrap{grid-template-columns:1fr 1fr}
+    .strip .it{border-left:none;padding-left:0;padding:18px 0}
+    .svc-feature{grid-template-columns:1fr 1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .split,.area-grid,.contact-grid{grid-template-columns:1fr;gap:42px}
+    .about-figure>img{aspect-ratio:16/12}
+    .steps{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:620px){
+    .sec{padding:60px 0}
+    .wrap{padding:0 20px}
+    /* top bar: drop the hours so the row can't clip; keep the tap-to-call phone */
+    .topbar .tb-r span,.topbar .sep{display:none}
+    /* header: declutter — the CTA lives in the drawer + sticky call bar on mobile */
+    .nav-cta{display:none}
+    header .nav{height:64px}
+    section[id]{scroll-margin-top:76px}
+    /* hero */
+    .hero .wrap{padding-top:34px;padding-bottom:52px}
+    .hero h1{font-size:clamp(29px,7.6vw,40px);overflow-wrap:break-word}
+    .hero p.sub{font-size:16px;margin:18px 0 28px}
+    .hero-media::after{background:linear-gradient(180deg,rgba(12,13,17,.5) 0%,rgba(12,13,17,.82) 60%,rgba(12,13,17,.93) 100%)}
+    .hero-cta{flex-direction:column;align-items:stretch;gap:12px}
+    .hero-cta .btn{width:100%}
+    .hero-trust{flex-direction:column;align-items:flex-start;gap:12px;margin-top:26px}
+    /* stat strip */
+    .svc-feature{grid-template-columns:1fr}
+    .stat-grid{grid-template-columns:1fr 1fr}
+    .strip .wrap{grid-template-columns:1fr 1fr}
+    .strip .it{padding:16px 4px;gap:11px}
+    .strip .ic{width:40px;height:40px}
+    .strip b{font-size:16px}
+    /* about */
+    .about-badge{right:12px;left:auto;bottom:-14px;padding:14px 18px}
+    .about-badge b{font-size:26px}
+    /* photo CTA band */
+    .band .wrap{padding:56px 22px}
+    .band-media::after{background:linear-gradient(180deg,rgba(12,13,17,.55),rgba(12,13,17,.9))}
+    .band .b-actions{min-width:0;width:100%}
+    .band .b-actions .btn{width:100%}
+    /* contact form: 16px fields prevent iOS zoom-on-focus */
+    form{padding:24px}
+    .field input,.field textarea,.field select{font-size:16px}
+    /* footer */
+    .foot-grid{grid-template-columns:1fr}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:12px}
+    /* sticky mobile call bar */
+    .mobile-call{display:flex}
+    body{padding-bottom:72px}
+    .hero{min-height:auto}
+  }
+  @media(max-width:400px){
+    .strip .wrap{grid-template-columns:1fr}
+    .strip .it{padding:12px 2px}
+    .hero h1{font-size:27px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.01ms!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<span id="top"></span>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-l">Licensed &amp; insured electrical contractor &middot; Corner Brook, NL</div>
+    <div class="tb-r">
+      <a href="tel:+17098868501"><b>(709) 886-8501</b></a>
+      <span class="sep">|</span>
+      <span>Mon&ndash;Fri 8&ndash;5 &middot; Emergencies welcome</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="bolt"><svg viewBox="0 0 921 981" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M 611.090 17.822 C 603.322 33.211, 563.581 119.999, 548.678 154.122 C 544.023 164.780, 532.340 191.275, 522.715 213 C 494.259 277.236, 490.190 286.517, 481.285 307.500 C 476.617 318.500, 468.064 338.525, 462.279 352 C 456.493 365.475, 449.165 382.800, 445.994 390.500 C 439.462 406.361, 427.846 433.988, 416.593 460.431 C 412.396 470.293, 409.308 478.700, 409.731 479.113 C 410.154 479.526, 439.525 480.180, 475 480.567 C 510.475 480.953, 546.307 481.546, 554.627 481.885 L 569.755 482.500 551.500 531 C 541.459 557.675, 525.356 599.443, 515.715 623.817 C 502.968 656.043, 498.545 668.272, 499.501 668.639 C 500.728 669.110, 525.962 668.020, 596.500 664.451 C 612.450 663.644, 649.125 661.859, 678 660.485 C 744.013 657.342, 819.219 652.736, 824.640 651.504 C 827.777 650.790, 828.426 648.129, 825.730 647.029 C 823.090 645.951, 786.024 643.697, 726.500 640.993 C 702.850 639.919, 678.775 638.798, 673 638.502 C 667.225 638.205, 646.975 637.303, 628 636.497 C 593.022 635.011, 557.776 633.003, 557.165 632.461 C 556.830 632.163, 566.836 604.916, 575.513 582.500 C 578.068 575.900, 584.366 559.250, 589.509 545.500 C 594.652 531.750, 601.606 513.300, 604.963 504.500 C 621.699 460.619, 628.103 442.976, 627.594 442.152 C 627.287 441.655, 610.939 440.964, 591.267 440.617 C 509.476 439.176, 490.465 438.753, 489.803 438.360 C 489.419 438.133, 490.707 433.572, 492.665 428.224 C 506.198 391.254, 517.702 357.466, 534.963 304 C 540.024 288.325, 544.556 274.375, 545.035 273 C 559.324 231.999, 619.235 17.662, 617.599 13.398 C 616.474 10.466, 613.930 12.195, 611.090 17.822 M 384 323.083 C 369.425 323.505, 325.550 324.562, 286.500 325.432 C 106.026 329.453, 13.607 333.255, 12.280 336.713 C 10.896 340.318, 17.652 340.879, 100 343.996 C 151.488 345.945, 158.613 346.267, 233.500 350.039 C 294.974 353.134, 366.305 358.147, 367.779 359.474 C 368.334 359.973, 348.777 408.391, 328.993 455.500 C 321.370 473.650, 311.256 497.950, 306.515 509.500 C 301.775 521.050, 295.366 536.474, 292.273 543.775 C 288.922 551.687, 287.024 557.390, 287.575 557.891 C 288.608 558.831, 347.850 560.674, 408 561.636 C 429.725 561.984, 447.667 562.413, 447.872 562.589 C 448.246 562.912, 447.365 565.121, 431.560 603.500 C 419.108 633.737, 414.297 645.317, 409.955 655.500 C 407.844 660.450, 400.966 676.650, 394.670 691.500 C 388.374 706.350, 380.660 724.125, 377.526 731 C 374.393 737.875, 370.736 745.931, 369.400 748.902 C 368.064 751.874, 366.789 754.123, 366.567 753.900 C 366.152 753.485, 373.647 716.296, 380.958 682.500 C 388.764 646.411, 391.437 633.103, 390.969 632.646 C 390.540 632.226, 372.778 632.811, 289.500 635.987 C 259.039 637.148, 191.717 640.321, 162 641.996 C 152.375 642.539, 131.450 643.666, 115.500 644.502 C 78.774 646.427, 77 646.638, 77 649.075 C 77 650.220, 77.885 651.155, 79.250 651.453 C 83.869 652.462, 149.464 656.135, 214 658.998 C 267.717 661.382, 289.336 662.753, 333.500 666.579 C 344.500 667.532, 353.872 668.636, 354.327 669.033 C 354.782 669.430, 354.233 674.422, 353.107 680.127 C 350.372 693.989, 344.322 725.107, 337.483 760.500 C 329.535 801.632, 311.276 893.740, 303.552 931.670 C 296.331 967.123, 296.094 969, 298.837 969 C 300.219 969, 303.604 963.365, 312.506 946.250 C 319.014 933.737, 330.619 911.575, 338.296 897 C 345.973 882.425, 357.425 860.600, 363.744 848.500 C 370.064 836.400, 378.967 819.525, 383.529 811 C 411.963 757.863, 441.795 697.998, 461.017 655.500 C 462.261 652.750, 465.957 644.650, 469.231 637.500 C 477.026 620.478, 499.456 568.659, 506.577 551.224 C 509.660 543.676, 513.525 534.424, 515.165 530.664 C 516.806 526.904, 517.932 523.265, 517.668 522.576 C 517.295 521.606, 504.733 521.174, 461.844 520.655 C 386.292 519.740, 350 518.837, 350 517.871 C 350 517.425, 351.077 514.683, 352.394 511.780 C 353.711 508.876, 364.691 481.750, 376.795 451.500 C 388.899 421.250, 405.371 380.112, 413.401 360.082 C 421.430 340.053, 428 323.290, 428 322.832 C 428 321.919, 423.278 321.946, 384 323.083 M 594.500 329.049 C 580.750 329.419, 566.904 329.784, 563.732 329.861 L 557.963 330 547.146 352.250 C 541.197 364.488, 536.673 374.639, 537.093 374.810 C 537.513 374.980, 552.177 373.305, 569.679 371.087 C 600.708 367.155, 643.169 362.107, 679.500 358.029 C 695.176 356.270, 730.494 352.748, 785 347.508 C 793.525 346.688, 814.450 344.658, 831.500 342.996 C 848.550 341.334, 872.570 339.113, 884.877 338.060 C 907.002 336.167, 909.802 335.533, 908.702 332.666 C 907.951 330.709, 899.388 330.181, 849 328.981 C 804.753 327.927, 634.509 327.973, 594.500 329.049"/></svg></span>
+      <span class="bn">Strickland's<small>ELECTRICAL LTD.</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#area">Service Area</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+17098868501" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+        (709) 886-8501
+      </a>
+      <a href="#contact" class="btn btn-primary">Free Estimate</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <button class="close" id="closeBtn" aria-label="Close menu">&times;</button>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#area">Service Area</a>
+  <a href="#process">Process</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+17098868501" class="btn btn-primary">Call (709) 886-8501</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1660330589487-39cc0177ba89?w=1920&q=72&auto=format&fit=crop" alt="Strickland's electrician wiring an outdoor electrical panel" fetchpriority="high" />
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="kicker on-dark">Licensed Electrical Contractor &middot; Corner Brook, NL</span>
+      <h1>Trusted electricians for Corner Brook &amp; <span class="hl">Western NL.</span></h1>
+      <p class="sub">Strickland's Electrical Ltd. handles residential and commercial wiring, panel upgrades, lighting, EV chargers and more. Licensed, insured, and done safely. Free estimates, every time.</p>
+      <div class="hero-cta">
+        <a href="tel:+17098868501" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+          Call (709) 886-8501
+        </a>
+        <a href="#contact" class="btn btn-outline">Get a Free Estimate</a>
+      </div>
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Licensed &amp; Insured</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg> Residential &amp; Commercial</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Free Estimates</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STAT STRIP ===== -->
+<div class="strip">
+  <div class="wrap">
+    <div class="it">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <div><b>Licensed &amp; Insured</b><span>Code-compliant NL contractor</span></div>
+    </div>
+    <div class="it">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span>
+      <div><b>Residential &amp; Commercial</b><span>One team for any job size</span></div>
+    </div>
+    <div class="it">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <div><b>Emergencies Welcome</b><span>Flexible, after-hours service</span></div>
+    </div>
+    <div class="it">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <div><b>Locally Owned</b><span>Based in Corner Brook</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">What We Do</span>
+      <h2>Full-service electrical, top to bottom.</h2>
+      <p>From a flickering light to a full commercial fit-up, we handle electrical work of every size with the same care and code-compliant quality.</p>
+    </div>
+    <div class="svc-feature">
+      <article class="svc-card reveal">
+        <div class="svc-thumb"><span class="tag">Residential</span><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=760&q=70&auto=format&fit=crop" alt="Electrician working on residential wiring" loading="lazy" /></div>
+        <div class="svc-body"><h3>Residential Wiring</h3><p>New builds, additions and full rewires. Outlets, switches, circuits and everything behind the walls of your home.</p></div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-thumb"><span class="tag">Commercial</span><img src="https://images.unsplash.com/photo-1660330589693-99889d60181e?w=760&q=70&auto=format&fit=crop" alt="Electrician servicing a commercial electrical panel" loading="lazy" /></div>
+        <div class="svc-body"><h3>Commercial &amp; Industrial</h3><p>Shops, offices and worksites. Service fit-ups, equipment hookups and reliable power for your business operations.</p></div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-thumb"><span class="tag">Panels</span><img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=760&q=70&auto=format&fit=crop" alt="Testing breakers during an electrical panel upgrade" loading="lazy" /></div>
+        <div class="svc-body"><h3>Panel Upgrades</h3><p>Upgrade your electrical panel and service capacity for modern loads, safer breakers and room to grow.</p></div>
+      </article>
+    </div>
+    <div class="svc-more-head reveal"><h3>More we handle</h3><span>Every job, big or small, done to code.</span></div>
+    <div class="svc-grid">
+        <div class="svc-item reveal">
+          <span class="n">01</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 001 1h18a1 1 0 001-1v-2a1 1 0 00-1-1H3a1 1 0 00-1 1z"/><path d="M10 10V5a1 1 0 011-1h2a1 1 0 011 1v5"/><path d="M4 15v-3a6 6 0 016-6"/><path d="M20 15v-3a6 6 0 00-6-6"/></svg> New Construction</h3><p>Full electrical packages for new homes and builds, wired to code from the ground up.</p></div>
+        </div>
+        <div class="svc-item reveal">
+          <span class="n">02</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12l-8.4 8.4a2.1 2.1 0 11-3-3L12 9"/><path d="M17.6 15L22 10.6"/><path d="M20.9 11.7l-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16 4.6A5.56 5.56 0 0012.07 3H9l.92.82A6.18 6.18 0 0112 8.4V10l2 2h2.47l2.26 1.91"/></svg> Renovations</h3><p>Rewires, additions and upgrades that bring older spaces up to today's standards.</p></div>
+        </div>
+        <div class="svc-item reveal">
+          <span class="n">03</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5A6 6 0 106 8c0 1 .2 2.2 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> Lighting &amp; Fixtures</h3><p>Interior, exterior, pot lights and LED retrofits, installed clean and level.</p></div>
+        </div>
+        <div class="svc-item reveal">
+          <span class="n">04</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 11-12.77.04"/></svg> Generators</h3><p>Standby and backup generator hookups to keep the power on when the grid drops.</p></div>
+        </div>
+        <div class="svc-item reveal">
+          <span class="n">05</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.3 20.3a2.4 2.4 0 003.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 000 3.4z"/><path d="M2 22l3-3"/><path d="M7.5 13.5L10 11"/><path d="M10.5 16.5L13 14"/><path d="M18 3l-4 4h6l-4 4"/></svg> EV Charger Installs</h3><p>Home and workplace EV charging stations wired safely for your vehicle.</p></div>
+        </div>
+        <div class="svc-item reveal">
+          <span class="n">06</span>
+          <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg> Troubleshooting &amp; Repairs</h3><p>Dead outlets, tripping breakers and faulty wiring, diagnosed and fixed right.</p></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="sec alt" id="about">
+  <div class="wrap split">
+    <div class="about-figure reveal">
+      <img src="https://images.unsplash.com/photo-1530240852689-f7a9c6d9f6c7?w=900&q=72&auto=format&fit=crop" alt="Strickland's electrician working at height on overhead lines" loading="lazy" />
+      <div class="about-badge">
+        <b>Done Right</b>
+        <span>Safe, tidy, code-compliant work</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="kicker">Who We Are</span>
+      <h2 style="font-size:clamp(30px,4.2vw,48px);margin-top:14px">A local name you can trust.</h2>
+      <p class="lead" style="margin-top:16px">Strickland's Electrical Ltd. is a Corner Brook based electrical contractor proudly serving homeowners and businesses throughout Western Newfoundland. We're a hands-on, growing team that believes in doing electrical work the right way: safe, tidy, and built to last.</p>
+      <p style="color:var(--muted);margin-top:14px">When you call us, you get straight answers, fair pricing and licensed workmanship. No shortcuts, no surprises.</p>
+      <div class="stat-grid">
+        <div class="stat"><b><em>100%</em></b><span>Licensed &amp; code-compliant work</span></div>
+        <div class="stat"><b>Local</b><span>Based right here in Corner Brook</span></div>
+        <div class="stat"><b>Res + Com</b><span>Homes and businesses alike</span></div>
+        <div class="stat"><b>Free</b><span>No-obligation estimates</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US / CHECKLIST ===== -->
+<section class="sec">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="kicker">Why Strickland's</span>
+      <h2 style="font-size:clamp(30px,4.2vw,48px);margin-top:14px">The right call for the job.</h2>
+      <p class="lead" style="margin-top:16px">We're the local crew homeowners and businesses across Western NL keep on speed dial. Here's what you can count on.</p>
+      <a href="#contact" class="btn btn-dark" style="margin-top:26px">Request a Free Estimate</a>
+    </div>
+    <div class="reveal">
+      <ul class="checklist">
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Licensed Electrical Contractor</b><span>Registered and operating to Newfoundland &amp; Labrador electrical code.</span></div></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Residential &amp; Commercial</b><span>One trusted team for your home, your rental, or your business.</span></div></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Upfront, Honest Pricing</b><span>Clear estimates before we start, so you'll know what to expect.</span></div></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Clean, Safety-First Work</b><span>We treat your property with respect and leave it tidy.</span></div></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Locally Owned &amp; Operated</b><span>Your neighbours in Corner Brook, invested in the community.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHOTO CTA BAND ===== -->
+<section class="band">
+  <div class="band-media">
+    <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?w=1920&q=70&auto=format&fit=crop" alt="Neatly wired electrical distribution panel" loading="lazy" />
+  </div>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker on-dark">Ready When You Are</span>
+      <h2 style="margin-top:14px">Let's get your project powered up.</h2>
+      <p>Free estimates on residential &amp; commercial work across Corner Brook and Western Newfoundland.</p>
+    </div>
+    <div class="b-actions reveal">
+      <span class="b-phone">(709) 886-8501</span>
+      <a href="tel:+17098868501" class="btn btn-primary">Call Now</a>
+      <a href="#contact" class="btn btn-outline">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE AREA ===== -->
+<section class="sec alt" id="area">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <span class="kicker">Where We Work</span>
+      <h2 style="font-size:clamp(30px,4.2vw,46px);margin-top:14px">Serving Corner Brook &amp; Western Newfoundland.</h2>
+      <p class="lead" style="margin-top:16px">Based out of Corner Brook, we travel throughout the Bay of Islands and Western NL region for residential and commercial electrical work. Not sure if you're in our area? Just give us a call.</p>
+      <div class="pills">
+        <span class="pill"><em>&#9679;</em> Corner Brook</span>
+        <span class="pill"><em>&#9679;</em> Massey Drive</span>
+        <span class="pill"><em>&#9679;</em> Mount Moriah</span>
+        <span class="pill"><em>&#9679;</em> Steady Brook</span>
+        <span class="pill"><em>&#9679;</em> Pasadena</span>
+        <span class="pill"><em>&#9679;</em> Humber Valley</span>
+        <span class="pill"><em>&#9679;</em> Deer Lake</span>
+        <span class="pill"><em>&#9679;</em> Bay of Islands</span>
+      </div>
+      <a href="#contact" class="btn btn-dark" style="margin-top:28px">Check My Area</a>
+    </div>
+    <div class="area-map reveal">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Strickland's Electrical service area, Massey Drive, NL" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.95%2C48.91%2C-57.83%2C48.98&amp;layer=mapnik&amp;marker=48.9447%2C-57.8861"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">Simple &amp; Stress-Free</span>
+      <h2>How it works.</h2>
+      <p style="margin-left:auto;margin-right:auto">Getting your electrical work done shouldn't be complicated. Here's what to expect.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num"></div><h3>Get in Touch</h3><p>Call, text or send us a message describing what you need. We'll listen and ask the right questions.</p></div>
+      <div class="step reveal"><div class="num"></div><h3>Free Estimate</h3><p>We assess the job and give you a clear, honest quote. No obligation and no pressure.</p></div>
+      <div class="step reveal"><div class="num"></div><h3>Job Done Right</h3><p>We show up on schedule, do clean licensed work, and make sure you're happy before we leave.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="sec alt" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Get In Touch</span>
+      <h2>Let's talk about your project.</h2>
+      <p>Tell us what you need and we'll get back to you with a free estimate.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <a class="info-card" href="tel:+17098868501">
+          <span class="iic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg></span>
+          <div><b>Call or Text</b><p>(709) 886-8501</p></div>
+        </a>
+        <div class="info-card">
+          <span class="iic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><b>Location</b><p>142 Massey Dr, Massey Drive, NL A2H 7A1<br>Serving Corner Brook, Massey Drive &amp; Western NL</p></div>
+        </div>
+        <div class="info-card">
+          <span class="iic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><b>Hours</b><p>Mon&ndash;Fri: 8:00 AM &ndash; 5:00 PM<br>Emergency &amp; after-hours by request</p></div>
+        </div>
+        <a class="info-card" href="https://www.facebook.com/p/Stricklands-Electrical-100057333104794/" target="_blank" rel="noopener">
+          <span class="iic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg></span>
+          <div><b>Follow Us</b><p>Find Strickland's Electrical on Facebook</p></div>
+        </a>
+      </div>
+
+      <form class="reveal" id="contactForm" action="https://formsubmit.co/artovdienko@gmail.com" method="POST">
+        <h3>Request a Free Estimate</h3>
+        <p class="fsub">We'll get back to you as soon as we can.</p>
+        <input type="hidden" name="_subject" value="New estimate request: Strickland's Electrical website" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" style="display:none" />
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" name="Name" placeholder="John Smith" required />
+        </div>
+        <div class="field">
+          <label>Phone Number</label>
+          <input type="tel" name="Phone" placeholder="709-555-0123" required />
+        </div>
+        <div class="field">
+          <label>Email (optional)</label>
+          <input type="email" name="Email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label>Type of Work</label>
+          <select name="Service">
+            <option>Residential electrical</option>
+            <option>Commercial / industrial</option>
+            <option>Panel upgrade</option>
+            <option>Lighting installation</option>
+            <option>EV charger install</option>
+            <option>Troubleshooting / repair</option>
+            <option>Other / not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Project Details</label>
+          <textarea name="Details" placeholder="Tell us a bit about what you need..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send My Request</button>
+        <p class="form-note">Prefer to talk? Call <a href="tel:+17098868501">(709) 886-8501</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="bolt"><svg viewBox="0 0 921 981" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M 611.090 17.822 C 603.322 33.211, 563.581 119.999, 548.678 154.122 C 544.023 164.780, 532.340 191.275, 522.715 213 C 494.259 277.236, 490.190 286.517, 481.285 307.500 C 476.617 318.500, 468.064 338.525, 462.279 352 C 456.493 365.475, 449.165 382.800, 445.994 390.500 C 439.462 406.361, 427.846 433.988, 416.593 460.431 C 412.396 470.293, 409.308 478.700, 409.731 479.113 C 410.154 479.526, 439.525 480.180, 475 480.567 C 510.475 480.953, 546.307 481.546, 554.627 481.885 L 569.755 482.500 551.500 531 C 541.459 557.675, 525.356 599.443, 515.715 623.817 C 502.968 656.043, 498.545 668.272, 499.501 668.639 C 500.728 669.110, 525.962 668.020, 596.500 664.451 C 612.450 663.644, 649.125 661.859, 678 660.485 C 744.013 657.342, 819.219 652.736, 824.640 651.504 C 827.777 650.790, 828.426 648.129, 825.730 647.029 C 823.090 645.951, 786.024 643.697, 726.500 640.993 C 702.850 639.919, 678.775 638.798, 673 638.502 C 667.225 638.205, 646.975 637.303, 628 636.497 C 593.022 635.011, 557.776 633.003, 557.165 632.461 C 556.830 632.163, 566.836 604.916, 575.513 582.500 C 578.068 575.900, 584.366 559.250, 589.509 545.500 C 594.652 531.750, 601.606 513.300, 604.963 504.500 C 621.699 460.619, 628.103 442.976, 627.594 442.152 C 627.287 441.655, 610.939 440.964, 591.267 440.617 C 509.476 439.176, 490.465 438.753, 489.803 438.360 C 489.419 438.133, 490.707 433.572, 492.665 428.224 C 506.198 391.254, 517.702 357.466, 534.963 304 C 540.024 288.325, 544.556 274.375, 545.035 273 C 559.324 231.999, 619.235 17.662, 617.599 13.398 C 616.474 10.466, 613.930 12.195, 611.090 17.822 M 384 323.083 C 369.425 323.505, 325.550 324.562, 286.500 325.432 C 106.026 329.453, 13.607 333.255, 12.280 336.713 C 10.896 340.318, 17.652 340.879, 100 343.996 C 151.488 345.945, 158.613 346.267, 233.500 350.039 C 294.974 353.134, 366.305 358.147, 367.779 359.474 C 368.334 359.973, 348.777 408.391, 328.993 455.500 C 321.370 473.650, 311.256 497.950, 306.515 509.500 C 301.775 521.050, 295.366 536.474, 292.273 543.775 C 288.922 551.687, 287.024 557.390, 287.575 557.891 C 288.608 558.831, 347.850 560.674, 408 561.636 C 429.725 561.984, 447.667 562.413, 447.872 562.589 C 448.246 562.912, 447.365 565.121, 431.560 603.500 C 419.108 633.737, 414.297 645.317, 409.955 655.500 C 407.844 660.450, 400.966 676.650, 394.670 691.500 C 388.374 706.350, 380.660 724.125, 377.526 731 C 374.393 737.875, 370.736 745.931, 369.400 748.902 C 368.064 751.874, 366.789 754.123, 366.567 753.900 C 366.152 753.485, 373.647 716.296, 380.958 682.500 C 388.764 646.411, 391.437 633.103, 390.969 632.646 C 390.540 632.226, 372.778 632.811, 289.500 635.987 C 259.039 637.148, 191.717 640.321, 162 641.996 C 152.375 642.539, 131.450 643.666, 115.500 644.502 C 78.774 646.427, 77 646.638, 77 649.075 C 77 650.220, 77.885 651.155, 79.250 651.453 C 83.869 652.462, 149.464 656.135, 214 658.998 C 267.717 661.382, 289.336 662.753, 333.500 666.579 C 344.500 667.532, 353.872 668.636, 354.327 669.033 C 354.782 669.430, 354.233 674.422, 353.107 680.127 C 350.372 693.989, 344.322 725.107, 337.483 760.500 C 329.535 801.632, 311.276 893.740, 303.552 931.670 C 296.331 967.123, 296.094 969, 298.837 969 C 300.219 969, 303.604 963.365, 312.506 946.250 C 319.014 933.737, 330.619 911.575, 338.296 897 C 345.973 882.425, 357.425 860.600, 363.744 848.500 C 370.064 836.400, 378.967 819.525, 383.529 811 C 411.963 757.863, 441.795 697.998, 461.017 655.500 C 462.261 652.750, 465.957 644.650, 469.231 637.500 C 477.026 620.478, 499.456 568.659, 506.577 551.224 C 509.660 543.676, 513.525 534.424, 515.165 530.664 C 516.806 526.904, 517.932 523.265, 517.668 522.576 C 517.295 521.606, 504.733 521.174, 461.844 520.655 C 386.292 519.740, 350 518.837, 350 517.871 C 350 517.425, 351.077 514.683, 352.394 511.780 C 353.711 508.876, 364.691 481.750, 376.795 451.500 C 388.899 421.250, 405.371 380.112, 413.401 360.082 C 421.430 340.053, 428 323.290, 428 322.832 C 428 321.919, 423.278 321.946, 384 323.083 M 594.500 329.049 C 580.750 329.419, 566.904 329.784, 563.732 329.861 L 557.963 330 547.146 352.250 C 541.197 364.488, 536.673 374.639, 537.093 374.810 C 537.513 374.980, 552.177 373.305, 569.679 371.087 C 600.708 367.155, 643.169 362.107, 679.500 358.029 C 695.176 356.270, 730.494 352.748, 785 347.508 C 793.525 346.688, 814.450 344.658, 831.500 342.996 C 848.550 341.334, 872.570 339.113, 884.877 338.060 C 907.002 336.167, 909.802 335.533, 908.702 332.666 C 907.951 330.709, 899.388 330.181, 849 328.981 C 804.753 327.927, 634.509 327.973, 594.500 329.049"/></svg></span>
+          <span class="bn">Strickland's<small>ELECTRICAL LTD.</small></span>
+        </a>
+        <p>Licensed residential &amp; commercial electrical contractor serving Corner Brook, Massey Drive and Western Newfoundland. Quality work, honest pricing, done safely.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Residential Wiring</a>
+        <a href="#services">Commercial &amp; Industrial</a>
+        <a href="#services">Panel Upgrades</a>
+        <a href="#services">EV Charger Installs</a>
+        <a href="#services">Troubleshooting</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+17098868501">(709) 886-8501</a>
+        <p>142 Massey Dr<br>Massey Drive, NL A2H 7A1</p>
+        <p>Mon&ndash;Fri: 8 AM &ndash; 5 PM</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr"></span> Strickland's Electrical Ltd. All rights reserved.</span>
+      <span class="foot-credit">Sample site by <a href="https://simuscale.ca" target="_blank" rel="noopener">SimuScale &middot; simuscale.ca</a></span>
+      <div class="social">
+        <a href="https://www.facebook.com/p/Stricklands-Electrical-100057333104794/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg></a>
+        <a href="tel:+17098868501" aria-label="Call"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MOBILE CALL BAR ===== -->
+<div class="mobile-call">
+  <a href="tel:+17098868501" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg> Call Now</a>
+  <a href="#contact" class="btn btn-ghost">Free Quote</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile drawer
+  const drawer = document.getElementById('drawer');
+  document.getElementById('menuBtn').addEventListener('click',()=>drawer.classList.add('open'));
+  document.getElementById('closeBtn').addEventListener('click',()=>drawer.classList.remove('open'));
+  drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>drawer.classList.remove('open')));
+
+  // header turns solid once you scroll past the hero
+  const hdr=document.getElementById('hdr');
+  const onScroll=()=>hdr.classList.toggle('solid',window.scrollY>60);
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  // scroll reveal
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay=(i%3*0.07)+'s'; io.observe(el); });
+</script>
+</body>
+</html>
