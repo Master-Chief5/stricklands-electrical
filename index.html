@@ -663,12 +663,9 @@
         </a>
       </div>
 
-      <form class="reveal" id="contactForm" action="https://formsubmit.co/stricklandselectrical@outlook.com" method="POST">
+      <form class="reveal" id="contactForm">
         <h3>Request a Free Estimate</h3>
-        <p class="fsub">We'll get back to you as soon as we can.</p>
-        <input type="hidden" name="_subject" value="New estimate request: Strickland's Electrical website" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="text" name="_honey" style="display:none" />
+        <p class="fsub">Fill this out and hit send &mdash; it opens your email app with everything filled in for you.</p>
         <div class="field">
           <label>Full Name</label>
           <input type="text" name="Name" placeholder="John Smith" required />
@@ -697,7 +694,7 @@
           <label>Project Details</label>
           <textarea name="Details" placeholder="Tell us a bit about what you need..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send My Request</button>
+        <button type="submit" class="btn btn-primary">Send My Request by Email</button>
         <p class="form-note">Prefer to talk? Call <a href="tel:+17098868501">(709) 886-8501</a>.</p>
       </form>
     </div>
@@ -760,6 +757,20 @@
   const hdr=document.getElementById('hdr');
   const onScroll=()=>hdr.classList.toggle('solid',window.scrollY>60);
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  // contact form: build a pre-filled email and open the visitor's mail app
+  document.getElementById('contactForm').addEventListener('submit',(e)=>{
+    e.preventDefault();
+    const f=e.target;
+    const body='Name: '+f.Name.value
+      +'\nPhone: '+f.Phone.value
+      +'\nEmail: '+(f.Email.value||'Not provided')
+      +'\nType of Work: '+f.Service.value
+      +'\n\nProject Details:\n'+(f.Details.value||'(none given)');
+    window.location.href='mailto:stricklandselectrical@outlook.com'
+      +'?subject='+encodeURIComponent('Free estimate request from '+f.Name.value)
+      +'&body='+encodeURIComponent(body);
+  });
 
   // scroll reveal
   const io=new IntersectionObserver((entries)=>{
