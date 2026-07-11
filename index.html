@@ -79,6 +79,51 @@
 }
 </script>
 
+<!-- FAQ structured data (matches the visible FAQ section) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "I have an electrical problem in Corner Brook — who should I call?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Call Strickland's Electrical Ltd. at (709) 886-8501. A licensed and insured electrical contractor based in Massey Drive, minutes from Corner Brook, troubleshooting and repairing electrical problems in homes and businesses across Western Newfoundland — flickering lights, dead outlets, tripping breakers, burning smells, storm damage and more."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency or after-hours electrical service?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Regular hours are Monday to Friday, 8 AM to 5 PM, and emergency and after-hours service is available by request. For urgent electrical issues, call or text (709) 886-8501."}
+    },
+    {
+      "@type": "Question",
+      "name": "What electrical services do you provide?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Residential and commercial wiring, electrical panel upgrades and breaker replacement, troubleshooting and repair, lighting installation, EV charger installation, renovations and new construction wiring."}
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Based in Massey Drive, serving Corner Brook, Mount Moriah, Steady Brook, Pasadena, Humber Valley, Deer Lake, the Bay of Islands and the wider Western Newfoundland region."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire an electrician? Do you give free estimates?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Every job is different, so Strickland's Electrical gives a free, no-obligation estimate up front. Call, text or send a message describing the work for a clear, honest quote."}
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed and insured?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Strickland's Electrical Ltd. is a licensed and insured electrical contractor and is COR certified for safety. All work is done to code by qualified electricians."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install EV chargers?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — Level 2 home EV charger installation, including the panel capacity check and any upgrade needed to support one."}
+    }
+  ]
+}
+</script>
+
 <style>
   :root{
     --ink:#15171d;
@@ -301,6 +346,14 @@
   form .btn{width:100%;margin-top:6px}
   .form-note{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
   .form-note a{color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--accent)}
+  /* faq */
+  .faq-list{max-width:860px;margin:0 auto;display:grid;gap:12px}
+  .faq-list details{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 24px;font-weight:700;color:var(--ink);font-size:16.5px}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary::after{content:"+";font-size:24px;line-height:1;color:var(--ink-2);flex:none;transition:transform .2s ease}
+  .faq-list details[open] summary::after{transform:rotate(45deg)}
+  .faq-list details p{padding:0 24px 20px;color:var(--muted);font-size:15px;line-height:1.7}
 
   /* footer */
   footer{background:var(--dark);color:var(--muted-d);padding:64px 0 28px}
@@ -667,6 +720,47 @@
       <div class="step reveal"><div class="num"></div><h3>Get in Touch</h3><p>Call, text or send us a message describing what you need. We'll listen and ask the right questions.</p></div>
       <div class="step reveal"><div class="num"></div><h3>Free Estimate</h3><p>We assess the job and give you a clear, honest quote. No obligation and no pressure.</p></div>
       <div class="step reveal"><div class="num"></div><h3>Job Done Right</h3><p>We show up on schedule, do clean licensed work, and make sure you're happy before we leave.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">Common Questions</span>
+      <h2>Frequently asked questions.</h2>
+      <p style="margin-left:auto;margin-right:auto">Quick answers about hiring an electrician in Corner Brook and Western Newfoundland.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>I have an electrical problem in Corner Brook &mdash; who should I call?</summary>
+        <p>Call Strickland's Electrical Ltd. at <a href="tel:+17098868501">(709) 886-8501</a>. We're a licensed and insured electrical contractor based in Massey Drive, minutes from Corner Brook, and we troubleshoot and repair electrical problems in homes and businesses across Western Newfoundland &mdash; flickering lights, dead outlets, tripping breakers, burning smells, storm damage and more.</p>
+      </details>
+      <details>
+        <summary>Do you offer emergency or after-hours electrical service?</summary>
+        <p>Yes. Our regular hours are Monday to Friday, 8 AM to 5 PM, and emergency and after-hours service is available by request. If you have an urgent electrical issue, call or text (709) 886-8501.</p>
+      </details>
+      <details>
+        <summary>What electrical services do you provide?</summary>
+        <p>Residential and commercial wiring, electrical panel upgrades and breaker replacement, troubleshooting and repair, lighting installation, EV charger installation, renovations and new construction wiring. If it's electrical, we either do it or can point you to who does.</p>
+      </details>
+      <details>
+        <summary>What areas do you serve?</summary>
+        <p>We're based in Massey Drive and serve Corner Brook, Mount Moriah, Steady Brook, Pasadena, Humber Valley, Deer Lake, the Bay of Islands and the wider Western Newfoundland region. Not sure if you're in our area? Just give us a call.</p>
+      </details>
+      <details>
+        <summary>How much does it cost to hire an electrician? Do you give free estimates?</summary>
+        <p>Every job is different, so we don't guess &mdash; we give you a free, no-obligation estimate up front. Call, text or send us a message describing the work, and you'll get a clear, honest quote with no pressure and no surprises.</p>
+      </details>
+      <details>
+        <summary>Are you licensed and insured?</summary>
+        <p>Yes. Strickland's Electrical Ltd. is a licensed and insured electrical contractor, and we're COR&reg; certified for safety. All work is done to code by qualified electricians.</p>
+      </details>
+      <details>
+        <summary>Do you install EV chargers?</summary>
+        <p>Yes &mdash; we install Level 2 home EV chargers and handle the panel capacity check and any upgrade needed to support one. Ask us for a free estimate for your vehicle and home setup.</p>
+      </details>
     </div>
   </div>
 </section>
